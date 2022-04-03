@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-html-invalid-prop-test",
-  "version": "0.6.90003",
+  "version": "0.10.90003",
   "description": "",
   "main": "index.js",
   "scripts": {
