@@ -1,4 +1,4 @@
-const Props = require("./t");
+const Props = require("./attributes");
 
 const props = {
   div: Props.HTMLAttributes,
