@@ -32,6 +32,29 @@ module.exports = {
                 attribute.name.name &&
                 !props[elementName].includes(attribute.name.name)
               ) {
+                const propName = attribute.name.name;
+
+                let matchingProp = "";
+
+                matchingProp = props[elementName].find(
+                  (prop) => prop.toLowerCase() === propName.toLowerCase()
+                );
+
+                if (matchingProp) {
+                  context.report({
+                    node,
+                    data: {
+                      value: propName,
+                      node: elementName,
+                      matchingProp,
+                    },
+                    message:
+                      '"{{node}}" tag does not support "{{value}}" property, Try using "{{matchingProp}}" instead',
+                  });
+
+                  return;
+                }
+
                 context.report({
                   node,
                   data: {
@@ -39,7 +62,7 @@ module.exports = {
                     node: elementName,
                   },
                   message:
-                    '"{{node}}" tag does not suuport "{{value}}" property',
+                    '"{{node}}" tag does not support "{{value}}" property',
                 });
               }
             });
