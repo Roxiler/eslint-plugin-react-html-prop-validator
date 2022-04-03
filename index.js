@@ -43,6 +43,7 @@ module.exports = {
                 if (matchingProp) {
                   context.report({
                     node,
+                    loc: attribute.name.loc,
                     data: {
                       value: propName,
                       node: elementName,
@@ -57,6 +58,7 @@ module.exports = {
 
                 context.report({
                   node,
+                  loc: attribute.name.loc,
                   data: {
                     value: attribute.name.name,
                     node: elementName,
