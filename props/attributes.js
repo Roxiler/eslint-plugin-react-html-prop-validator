@@ -1,164 +1,3 @@
-// interface Props<T> {
-//   children?: ReactNode | undefined;
-//   key?: Key | undefined;
-//   ref?: LegacyRef<T> | undefined;
-// }
-
-// interface HTMLProps<T> extends AllHTMLAttributes<T>, ClassAttributes<T> {}
-
-// type DetailedHTMLProps<E extends HTMLAttributes<T>, T> = ClassAttributes<T> & E;
-
-// interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}
-
-// interface AllHTMLAttributes<T> extends HTMLAttributes<T> {
-//     // Standard HTML Attributes
-//     accept?: string | undefined;
-//     acceptCharset?: string | undefined;
-//     "accept-charset"?: string | undefined;
-//     action?: string | undefined;
-//     allowFullScreen?: boolean | undefined;
-//     allowfullscreen?: boolean | string | undefined;
-//     allowTransparency?: boolean | undefined;
-//     allowtransparency?: boolean | string | undefined;
-//     alt?: string | undefined;
-//     as?: string | undefined;
-//     async?: boolean | string | undefined;
-//     autoComplete?: string | undefined;
-//     autocomplete?: string | undefined;
-//     autoFocus?: boolean | undefined;
-//     autofocus?: boolean | string | undefined;
-//     autoPlay?: boolean | undefined;
-//     autoplay?: boolean | string | undefined;
-//     capture?: boolean | string | undefined;
-//     cellPadding?: number | string | undefined;
-//     cellpadding?: number | string | undefined;
-//     cellSpacing?: number | string | undefined;
-//     cellspacing?: number | string | undefined;
-//     charSet?: string | undefined;
-//     charset?: string | undefined;
-//     challenge?: string | undefined;
-//     checked?: boolean | string | undefined;
-//     cite?: string | undefined;
-//     class?: string | undefined;
-//     classID?: string | undefined;
-//     classid?: string | undefined;
-//     cols?: number | string | undefined;
-//     colSpan?: number | undefined;
-//     colspan?: number | string | undefined;
-//     content?: string | undefined;
-//     controls?: boolean | string | undefined;
-//     coords?: string | undefined;
-//     crossOrigin?: string | undefined;
-//     crossorigin?: string | undefined;
-//     data?: string | undefined;
-//     dateTime?: string | undefined;
-//     datetime?: string | undefined;
-//     default?: boolean | string | undefined;
-//     defer?: boolean | string | undefined;
-//     disabled?: boolean | string | undefined;
-//     download?: any;
-//     encType?: string | undefined;
-//     enctype?: string | undefined;
-//     for?: string | undefined;
-//     form?: string | undefined;
-//     formAction?: string | undefined;
-//     formaction?: string | undefined;
-//     formEncType?: string | undefined;
-//     formenctype?: string | undefined;
-//     formMethod?: string | undefined;
-//     formmethod?: string | undefined;
-//     formNoValidate?: boolean | undefined;
-//     formnovalidate?: boolean | string | undefined;
-//     formTarget?: string | undefined;
-//     formtarget?: string | undefined;
-//     frameBorder?: number | string | undefined;
-//     frameborder?: number | string | undefined;
-//     headers?: string | undefined;
-//     height?: number | string | undefined;
-//     high?: number | string | undefined;
-//     href?: string | undefined;
-//     hrefLang?: string | undefined;
-//     hreflang?: string | undefined;
-//     htmlFor?: string | undefined;
-//     httpEquiv?: string | undefined;
-//     "http-equiv"?: string | undefined;
-//     integrity?: string | undefined;
-//     keyParams?: string | undefined;
-//     keyparams?: string | undefined;
-//     keyType?: string | undefined;
-//     keytype?: string | undefined;
-//     kind?: string | undefined;
-//     label?: string | undefined;
-//     list?: string | undefined;
-//     loop?: boolean | string | undefined;
-//     low?: number | string | undefined;
-//     manifest?: string | undefined;
-//     marginHeight?: number | undefined;
-//     marginheight?: number | string | undefined;
-//     marginWidth?: number | undefined;
-//     marginwidth?: number | string | undefined;
-//     max?: number | string | undefined;
-//     maxLength?: number | undefined;
-//     maxlength?: number | string | undefined;
-//     media?: string | undefined;
-//     mediaGroup?: string | undefined;
-//     mediagroup?: string | undefined;
-//     method?: string | undefined;
-//     min?: number | string | undefined;
-//     minLength?: number | undefined;
-//     minlength?: number | string | undefined;
-//     multiple?: boolean | string | undefined;
-//     muted?: boolean | string | undefined;
-//     name?: string | undefined;
-//     nonce?: string | undefined;
-//     noValidate?: boolean | undefined;
-//     novalidate?: boolean | string | undefined;
-//     open?: boolean | string | undefined;
-//     optimum?: number | string | undefined;
-//     pattern?: string | undefined;
-//     placeholder?: string | undefined;
-//     playsInline?: boolean | undefined;
-//     playsinline?: boolean | string | undefined;
-//     poster?: string | undefined;
-//     preload?: string | undefined;
-//     readOnly?: boolean | undefined;
-//     readonly?: boolean | string | undefined;
-//     rel?: string | undefined;
-//     required?: boolean | string | undefined;
-//     reversed?: boolean | string | undefined;
-//     rows?: number | string | undefined;
-//     rowSpan?: number | undefined;
-//     rowspan?: number | string | undefined;
-//     sandbox?: string | undefined;
-//     scope?: string | undefined;
-//     scoped?: boolean | string | undefined;
-//     scrolling?: string | undefined;
-//     seamless?: boolean | string | undefined;
-//     selected?: boolean | string | undefined;
-//     shape?: string | undefined;
-//     size?: number | string | undefined;
-//     sizes?: string | undefined;
-//     span?: number | string | undefined;
-//     src?: string | undefined;
-//     srcDoc?: string | undefined;
-//     srcdoc?: string | undefined;
-//     srcLang?: string | undefined;
-//     srclang?: string | undefined;
-//     srcSet?: string | undefined;
-//     srcset?: string | undefined;
-//     start?: number | string | undefined;
-//     step?: number | string | undefined;
-//     summary?: string | undefined;
-//     target?: string | undefined;
-//     type?: string | undefined;
-//     useMap?: string | undefined;
-//     usemap?: string | undefined;
-//     value?: string | string[] | number | undefined;
-//     width?: number | string | undefined;
-//     wmode?: string | undefined;
-//     wrap?: string | undefined;
-//   }
-
 const DOMAttributes = [
   "children",
   "dangerouslySetInnerHTML",
@@ -563,11 +402,9 @@ const EmbedHTMLAttributes = [
 ];
 
 const FieldsetHTMLAttributes = [...HTMLAttributes, "disabled", "form", "name"];
-
 const FormHTMLAttributes = [
   ...HTMLAttributes,
   "acceptCharset",
-  "accept-charset",
   "action",
   "autoComplete",
   "autocomplete",
@@ -738,7 +575,6 @@ const MetaHTMLAttributes = [
   "charSet",
   "content",
   "httpEquiv",
-  "http-equiv",
   "name",
 ];
 
@@ -922,404 +758,290 @@ const VideoHTMLAttributes = [
   "disablePictureInPicture",
 ];
 
-// this list is "complete" in that it contains every SVG attribute
-// that React supports, but the types can be improved.
-// Full list here: https://facebook.github.io/react/docs/dom-elements.html
-//
-// The three broad type categories are (in order of restrictiveness):
-//   - "number | string"
-//   - "string"
-//   - union of string literals
-// interface SVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-//   // Attributes which also defined in HTMLAttributes
-//   // See comment in SVGDOMPropertyConfig.js
-//   "className",
-//   "class",
-//   "color",
-//   "height",
-//   "id",
-//   "lang",
-//   max?: number | string | undefined;
-//   media?: string | undefined;
-//   method?: string | undefined;
-//   min?: number | string | undefined;
-//   name?: string | undefined;
-//   style?: CSSProperties | undefined;
-//   target?: string | undefined;
-//   type?: string | undefined;
-//   width?: number | string | undefined;
+const SVGAttributes = [
+  ...DOMAttributes,
+  ...AriaAttributes,
+  ...ReactAttributes,
 
-//   // Other HTML properties supported by SVG elements in browsers
-//   role?: string | undefined;
-//   tabIndex?: number | undefined;
-//   tabindex?: number | string | undefined;
-//   crossOrigin?: "anonymous" | "use-credentials" | "" | undefined;
-//   crossorigin?: "anonymous" | "use-credentials" | "" | undefined;
+  "className",
+  "class",
+  "color",
+  "height",
+  "id",
+  "lang",
+  "max",
+  "media",
+  "method",
+  "min",
+  "name",
+  "style",
+  "target",
+  "type",
+  "width",
+  "role",
+  "tabIndex",
+  "crossOrigin",
 
-//   // SVG Specific attributes
-//   accentHeight?: number | string | undefined;
-//   "accent-height"?: number | string | undefined;
-//   accumulate?: "none" | "sum" | undefined;
-//   additive?: "replace" | "sum" | undefined;
-//   alignmentBaseline?:
-//     | "auto"
-//     | "baseline"
-//     | "before-edge"
-//     | "text-before-edge"
-//     | "middle"
-//     | "central"
-//     | "after-edge"
-//     | "text-after-edge"
-//     | "ideographic"
-//     | "alphabetic"
-//     | "hanging"
-//     | "mathematical"
-//     | "inherit"
-//     | undefined;
-//   "alignment-baseline"?:
-//     | "auto"
-//     | "baseline"
-//     | "before-edge"
-//     | "text-before-edge"
-//     | "middle"
-//     | "central"
-//     | "after-edge"
-//     | "text-after-edge"
-//     | "ideographic"
-//     | "alphabetic"
-//     | "hanging"
-//     | "mathematical"
-//     | "inherit"
-//     | undefined;
-//   allowReorder?: "no" | "yes" | undefined;
-//   alphabetic?: number | string | undefined;
-//   amplitude?: number | string | undefined;
-//   arabicForm?: "initial" | "medial" | "terminal" | "isolated" | undefined;
-//   "arabic-form"?: "initial" | "medial" | "terminal" | "isolated" | undefined;
-//   ascent?: number | string | undefined;
-//   attributeName?: string | undefined;
-//   attributeType?: string | undefined;
-//   autoReverse?: Booleanish | undefined;
-//   azimuth?: number | string | undefined;
-//   baseFrequency?: number | string | undefined;
-//   baselineShift?: number | string | undefined;
-//   "baseline-shift"?: number | string | undefined;
-//   baseProfile?: number | string | undefined;
-//   bbox?: number | string | undefined;
-//   begin?: number | string | undefined;
-//   bias?: number | string | undefined;
-//   by?: number | string | undefined;
-//   calcMode?: number | string | undefined;
-//   capHeight?: number | string | undefined;
-//   "cap-height"?: number | string | undefined;
-//   clip?: number | string | undefined;
-//   clipPath?: string | undefined;
-//   "clip-path"?: string | undefined;
-//   clipPathUnits?: number | string | undefined;
-//   clipRule?: number | string | undefined;
-//   "clip-rule"?: number | string | undefined;
-//   colorInterpolation?: number | string | undefined;
-//   "color-interpolation"?: number | string | undefined;
-//   colorInterpolationFilters?:
-//     | "auto"
-//     | "sRGB"
-//     | "linearRGB"
-//     | "inherit"
-//     | undefined;
-//   "color-interpolation-filters"?:
-//     | "auto"
-//     | "sRGB"
-//     | "linearRGB"
-//     | "inherit"
-//     | undefined;
-//   colorProfile?: number | string | undefined;
-//   "color-profile"?: number | string | undefined;
-//   colorRendering?: number | string | undefined;
-//   "color-rendering"?: number | string | undefined;
-//   contentScriptType?: number | string | undefined;
-//   contentStyleType?: number | string | undefined;
-//   cursor?: number | string | undefined;
-//   cx?: number | string | undefined;
-//   cy?: number | string | undefined;
-//   d?: string | undefined;
-//   decelerate?: number | string | undefined;
-//   descent?: number | string | undefined;
-//   diffuseConstant?: number | string | undefined;
-//   direction?: number | string | undefined;
-//   display?: number | string | undefined;
-//   divisor?: number | string | undefined;
-//   dominantBaseline?: number | string | undefined;
-//   "dominant-baseline"?: number | string | undefined;
-//   dur?: number | string | undefined;
-//   dx?: number | string | undefined;
-//   dy?: number | string | undefined;
-//   edgeMode?: number | string | undefined;
-//   elevation?: number | string | undefined;
-//   enableBackground?: number | string | undefined;
-//   "enable-background"?: number | string | undefined;
-//   end?: number | string | undefined;
-//   exponent?: number | string | undefined;
-//   externalResourcesRequired?: Booleanish | undefined;
-//   fill?: string | undefined;
-//   fillOpacity?: number | string | undefined;
-//   "fill-opacity"?: number | string | undefined;
-//   fillRule?: "nonzero" | "evenodd" | "inherit" | undefined;
-//   "fill-rule"?: "nonzero" | "evenodd" | "inherit" | undefined;
-//   filter?: string | undefined;
-//   filterRes?: number | string | undefined;
-//   filterUnits?: number | string | undefined;
-//   floodColor?: number | string | undefined;
-//   "flood-color"?: number | string | undefined;
-//   floodOpacity?: number | string | undefined;
-//   "flood-opacity"?: number | string | undefined;
-//   focusable?: Booleanish | "auto" | undefined;
-//   fontFamily?: string | undefined;
-//   "font-family"?: string | undefined;
-//   fontSize?: number | string | undefined;
-//   "font-size"?: number | string | undefined;
-//   fontSizeAdjust?: number | string | undefined;
-//   "font-size-adjust"?: number | string | undefined;
-//   fontStretch?: number | string | undefined;
-//   "font-stretch"?: number | string | undefined;
-//   fontStyle?: number | string | undefined;
-//   "font-style"?: number | string | undefined;
-//   fontVariant?: number | string | undefined;
-//   "font-variant"?: number | string | undefined;
-//   fontWeight?: number | string | undefined;
-//   "font-weight"?: number | string | undefined;
-//   format?: number | string | undefined;
-//   from?: number | string | undefined;
-//   fx?: number | string | undefined;
-//   fy?: number | string | undefined;
-//   g1?: number | string | undefined;
-//   g2?: number | string | undefined;
-//   glyphName?: number | string | undefined;
-//   "glyph-name"?: number | string | undefined;
-//   glyphOrientationHorizontal?: number | string | undefined;
-//   "glyph-orientation-horizontal"?: number | string | undefined;
-//   glyphOrientationVertical?: number | string | undefined;
-//   "glyph-orientation-vertical"?: number | string | undefined;
-//   glyphRef?: number | string | undefined;
-//   gradientTransform?: string | undefined;
-//   gradientUnits?: string | undefined;
-//   hanging?: number | string | undefined;
-//   horizAdvX?: number | string | undefined;
-//   "horiz-adv-x"?: number | string | undefined;
-//   horizOriginX?: number | string | undefined;
-//   "horiz-origin-x"?: number | string | undefined;
-//   href?: string | undefined;
-//   ideographic?: number | string | undefined;
-//   imageRendering?: number | string | undefined;
-//   "image-rendering"?: number | string | undefined;
-//   in2?: number | string | undefined;
-//   in?: string | undefined;
-//   intercept?: number | string | undefined;
-//   k1?: number | string | undefined;
-//   k2?: number | string | undefined;
-//   k3?: number | string | undefined;
-//   k4?: number | string | undefined;
-//   k?: number | string | undefined;
-//   kernelMatrix?: number | string | undefined;
-//   kernelUnitLength?: number | string | undefined;
-//   kerning?: number | string | undefined;
-//   keyPoints?: number | string | undefined;
-//   keySplines?: number | string | undefined;
-//   keyTimes?: number | string | undefined;
-//   lengthAdjust?: number | string | undefined;
-//   letterSpacing?: number | string | undefined;
-//   "letter-spacing"?: number | string | undefined;
-//   lightingColor?: number | string | undefined;
-//   "lighting-color"?: number | string | undefined;
-//   limitingConeAngle?: number | string | undefined;
-//   local?: number | string | undefined;
-//   markerEnd?: string | undefined;
-//   "marker-end"?: string | undefined;
-//   markerHeight?: number | string | undefined;
-//   markerMid?: string | undefined;
-//   "marker-mid"?: string | undefined;
-//   markerStart?: string | undefined;
-//   "marker-start"?: string | undefined;
-//   markerUnits?: number | string | undefined;
-//   markerWidth?: number | string | undefined;
-//   mask?: string | undefined;
-//   maskContentUnits?: number | string | undefined;
-//   maskUnits?: number | string | undefined;
-//   mathematical?: number | string | undefined;
-//   mode?: number | string | undefined;
-//   numOctaves?: number | string | undefined;
-//   offset?: number | string | undefined;
-//   opacity?: number | string | undefined;
-//   operator?: number | string | undefined;
-//   order?: number | string | undefined;
-//   orient?: number | string | undefined;
-//   orientation?: number | string | undefined;
-//   origin?: number | string | undefined;
-//   overflow?: number | string | undefined;
-//   overlinePosition?: number | string | undefined;
-//   "overline-position"?: number | string | undefined;
-//   overlineThickness?: number | string | undefined;
-//   "overline-thickness"?: number | string | undefined;
-//   paintOrder?: number | string | undefined;
-//   "paint-order"?: number | string | undefined;
-//   panose1?: number | string | undefined;
-//   "panose-1"?: number | string | undefined;
-//   path?: string | undefined;
-//   pathLength?: number | string | undefined;
-//   patternContentUnits?: string | undefined;
-//   patternTransform?: number | string | undefined;
-//   patternUnits?: string | undefined;
-//   pointerEvents?: number | string | undefined;
-//   "pointer-events"?: number | string | undefined;
-//   points?: string | undefined;
-//   pointsAtX?: number | string | undefined;
-//   pointsAtY?: number | string | undefined;
-//   pointsAtZ?: number | string | undefined;
-//   preserveAlpha?: Booleanish | undefined;
-//   preserveAspectRatio?: string | undefined;
-//   primitiveUnits?: number | string | undefined;
-//   r?: number | string | undefined;
-//   radius?: number | string | undefined;
-//   refX?: number | string | undefined;
-//   refY?: number | string | undefined;
-//   renderingIntent?: number | string | undefined;
-//   "rendering-intent"?: number | string | undefined;
-//   repeatCount?: number | string | undefined;
-//   repeatDur?: number | string | undefined;
-//   requiredExtensions?: number | string | undefined;
-//   requiredFeatures?: number | string | undefined;
-//   restart?: number | string | undefined;
-//   result?: string | undefined;
-//   rotate?: number | string | undefined;
-//   rx?: number | string | undefined;
-//   ry?: number | string | undefined;
-//   scale?: number | string | undefined;
-//   seed?: number | string | undefined;
-//   shapeRendering?: number | string | undefined;
-//   "shape-rendering"?: number | string | undefined;
-//   slope?: number | string | undefined;
-//   spacing?: number | string | undefined;
-//   specularConstant?: number | string | undefined;
-//   specularExponent?: number | string | undefined;
-//   speed?: number | string | undefined;
-//   spreadMethod?: string | undefined;
-//   startOffset?: number | string | undefined;
-//   stdDeviation?: number | string | undefined;
-//   stemh?: number | string | undefined;
-//   stemv?: number | string | undefined;
-//   stitchTiles?: number | string | undefined;
-//   stopColor?: string | undefined;
-//   "stop-color"?: string | undefined;
-//   stopOpacity?: number | string | undefined;
-//   "stop-opacity"?: number | string | undefined;
-//   strikethroughPosition?: number | string | undefined;
-//   "strikethrough-position"?: number | string | undefined;
-//   strikethroughThickness?: number | string | undefined;
-//   "strikethrough-thickness"?: number | string | undefined;
-//   string?: number | string | undefined;
-//   stroke?: string | undefined;
-//   strokeDasharray?: string | number | undefined;
-//   "stroke-dasharray"?: string | number | undefined;
-//   strokeDashoffset?: string | number | undefined;
-//   "stroke-dashoffset"?: string | number | undefined;
-//   strokeLinecap?: "butt" | "round" | "square" | "inherit" | undefined;
-//   "stroke-linecap"?: "butt" | "round" | "square" | "inherit" | undefined;
-//   strokeLinejoin?: "miter" | "round" | "bevel" | "inherit" | undefined;
-//   "stroke-linejoin"?: "miter" | "round" | "bevel" | "inherit" | undefined;
-//   strokeMiterlimit?: number | string | undefined;
-//   "stroke-miterlimit"?: number | string | undefined;
-//   strokeOpacity?: number | string | undefined;
-//   "stroke-opacity"?: number | string | undefined;
-//   strokeWidth?: number | string | undefined;
-//   "stroke-width"?: number | string | undefined;
-//   surfaceScale?: number | string | undefined;
-//   systemLanguage?: number | string | undefined;
-//   tableValues?: number | string | undefined;
-//   targetX?: number | string | undefined;
-//   targetY?: number | string | undefined;
-//   textAnchor?: string | undefined;
-//   "text-anchor"?: string | undefined;
-//   textDecoration?: number | string | undefined;
-//   "text-decoration"?: number | string | undefined;
-//   textLength?: number | string | undefined;
-//   textRendering?: number | string | undefined;
-//   "text-rendering"?: number | string | undefined;
-//   to?: number | string | undefined;
-//   transform?: string | undefined;
-//   u1?: number | string | undefined;
-//   u2?: number | string | undefined;
-//   underlinePosition?: number | string | undefined;
-//   "underline-position"?: number | string | undefined;
-//   underlineThickness?: number | string | undefined;
-//   "underline-thickness"?: number | string | undefined;
-//   unicode?: number | string | undefined;
-//   unicodeBidi?: number | string | undefined;
-//   "unicode-bidi"?: number | string | undefined;
-//   unicodeRange?: number | string | undefined;
-//   "unicode-range"?: number | string | undefined;
-//   unitsPerEm?: number | string | undefined;
-//   "units-per-em"?: number | string | undefined;
-//   vAlphabetic?: number | string | undefined;
-//   "v-alphabetic"?: number | string | undefined;
-//   values?: string | undefined;
-//   vectorEffect?: number | string | undefined;
-//   "vector-effect"?: number | string | undefined;
-//   version?: string | undefined;
-//   vertAdvY?: number | string | undefined;
-//   "vert-adv-y"?: number | string | undefined;
-//   vertOriginX?: number | string | undefined;
-//   "vert-origin-x"?: number | string | undefined;
-//   vertOriginY?: number | string | undefined;
-//   "vert-origin-y"?: number | string | undefined;
-//   vHanging?: number | string | undefined;
-//   "v-hanging"?: number | string | undefined;
-//   vIdeographic?: number | string | undefined;
-//   "v-ideographic"?: number | string | undefined;
-//   viewBox?: string | undefined;
-//   viewTarget?: number | string | undefined;
-//   visibility?: number | string | undefined;
-//   vMathematical?: number | string | undefined;
-//   "v-mathematical"?: number | string | undefined;
-//   widths?: number | string | undefined;
-//   wordSpacing?: number | string | undefined;
-//   "word-spacing"?: number | string | undefined;
-//   writingMode?: number | string | undefined;
-//   "writing-mode"?: number | string | undefined;
-//   x1?: number | string | undefined;
-//   x2?: number | string | undefined;
-//   x?: number | string | undefined;
-//   xChannelSelector?: string | undefined;
-//   xHeight?: number | string | undefined;
-//   "x-height"?: number | string | undefined;
-//   xlinkActuate?: string | undefined;
-//   "xlink:actuate"?: string | undefined;
-//   xlinkArcrole?: string | undefined;
-//   "xlink:arcrole"?: string | undefined;
-//   xlinkHref?: string | undefined;
-//   "xlink:href"?: string | undefined;
-//   xlinkRole?: string | undefined;
-//   "xlink:role"?: string | undefined;
-//   xlinkShow?: string | undefined;
-//   "xlink:show"?: string | undefined;
-//   xlinkTitle?: string | undefined;
-//   "xlink:title"?: string | undefined;
-//   xlinkType?: string | undefined;
-//   "xlink:type"?: string | undefined;
-//   xmlBase?: string | undefined;
-//   "xml:base"?: string | undefined;
-//   xmlLang?: string | undefined;
-//   "xml:lang"?: string | undefined;
-//   xmlns?: string | undefined;
-//   xmlnsXlink?: string | undefined;
-//   "xmlns:xlink"?: string | undefined;
-//   xmlSpace?: string | undefined;
-//   "xml:space"?: string | undefined;
-//   y1?: number | string | undefined;
-//   y2?: number | string | undefined;
-//   y?: number | string | undefined;
-//   yChannelSelector?: string | undefined;
-//   z?: number | string | undefined;
-//   zoomAndPan?: string | undefined;
-// }
+  "accentHeight",
+
+  "accumulate",
+  "additive",
+  "alignmentBaselin",
+
+  "allowReorder",
+  "alphabetic",
+  "amplitude",
+  "arabicForm",
+
+  "ascent",
+  "attributeName",
+  "attributeType",
+  "autoReverse",
+  "azimuth",
+  "baseFrequency",
+  "baselineShift",
+
+  "baseProfile",
+  "bbox",
+  "begin",
+  "bias",
+  "by",
+  "calcMode",
+  "capHeight",
+
+  "clip",
+  "clipPath",
+
+  "clipPathUnits",
+  "clipRule",
+
+  "colorInterpolation",
+  "colorInterpolationFilter",
+  "colorProfile",
+  "colorRendering",
+  "contentScriptType",
+  "contentStyleType",
+  "cursor",
+  "cx",
+  "cy",
+  "d",
+  "decelerate",
+  "descent",
+  "diffuseConstant",
+  "direction",
+  "display",
+  "divisor",
+  "dominantBaseline",
+  "dur",
+  "dx",
+  "dy",
+  "edgeMode",
+  "elevation",
+  "enableBackground",
+  "end",
+  "exponent",
+  "externalResourcesRequired",
+  "fill",
+  "fillOpacity",
+  "fillRule",
+  "filter",
+  "filterRes",
+  "filterUnits",
+  "floodColor",
+  "floodOpacity",
+  "focusable",
+  "fontFamily",
+  "fontSize",
+  "fontSizeAdjust",
+  "fontStretch",
+  "fontStyle",
+  "fontVariant",
+  "fontWeight",
+  "format",
+  "from",
+  "fx",
+  "fy",
+  "g1",
+  "g2",
+  "glyphName",
+  "glyphOrientationHorizontal",
+  "glyphOrientationVertical",
+  "glyphRef",
+  "gradientTransform",
+  "gradientUnits",
+  "hanging",
+  "horizAdvX",
+  "horizOriginX",
+  "href",
+  "ideographic",
+  "imageRendering",
+  "in2",
+  "in",
+  "intercept",
+  "k1",
+  "k2",
+  "k3",
+  "k4",
+  "k",
+  "kernelMatrix",
+  "kernelUnitLength",
+  "kerning",
+  "keyPoints",
+  "keySplines",
+  "keyTimes",
+  "lengthAdjust",
+  "letterSpacing",
+  "lightingColor",
+  "limitingConeAngle",
+  "local",
+  "markerEnd",
+  "markerHeight",
+  "markerMid",
+  "markerStart",
+  "markerUnits",
+  "markerWidth",
+  "mask",
+  "maskContentUnits",
+  "maskUnits",
+  "mathematical",
+  "mode",
+  "numOctaves",
+  "offset",
+  "opacity",
+  "operator",
+  "order",
+  "orient",
+  "orientation",
+  "origin",
+  "overflow",
+  "overlinePosition",
+  "overlineThickness",
+  "paintOrder",
+  "panose1",
+  "path",
+  "pathLength",
+  "patternContentUnits",
+  "patternTransform",
+  "patternUnits",
+  "pointerEvents",
+  "points",
+  "pointsAtX",
+  "pointsAtY",
+  "pointsAtZ",
+  "preserveAlpha",
+  "preserveAspectRatio",
+  "primitiveUnits",
+  "r",
+  "radius",
+  "refX",
+  "refY",
+  "renderingIntent",
+  "repeatCount",
+  "repeatDur",
+  "requiredExtensions",
+  "requiredFeatures",
+  "restart",
+  "result",
+  "rotate",
+  "rx",
+  "ry",
+  "scale",
+  "seed",
+  "shapeRendering",
+  "slope",
+  "spacing",
+  "specularConstant",
+  "specularExponent",
+  "speed",
+  "spreadMethod",
+  "startOffset",
+  "stdDeviation",
+  "stemh",
+  "stemv",
+  "stitchTiles",
+  "stopColor",
+  "stopOpacity",
+  "strikethroughPosition",
+  "strikethroughThickness",
+  "string",
+  "stroke",
+  "strokeDasharray",
+  "strokeDashoffset",
+  "strokeLinecap",
+  "strokeLinejoin",
+  "strokeMiterlimit",
+  "strokeOpacity",
+  "strokeWidth",
+  "surfaceScale",
+  "systemLanguage",
+  "tableValues",
+  "targetX",
+  "targetY",
+  "textAnchor",
+  "textDecoration",
+  "textLength",
+  "textRendering",
+  "to",
+  "transform",
+  "u1",
+  "u2",
+  "underlinePosition",
+  "underlineThickness",
+  "unicode",
+  "unicodeBidi",
+  "unicodeRange",
+  "unitsPerEm",
+  "vAlphabetic",
+  "values",
+  "vectorEffect",
+  "version",
+  "vertAdvY",
+  "vertOriginX",
+  "vertOriginY",
+  "vHanging",
+  "vIdeographic",
+  "viewBox",
+  "viewTarget",
+  "visibility",
+  "vMathematical",
+  "widths",
+  "wordSpacing",
+  "writingMode",
+  "x1",
+  "x2",
+  "x",
+  "xChannelSelector",
+  "xHeight",
+  "xlinkActuate",
+  "xlink:actuate",
+  "xlinkArcrole",
+  "xlink:arcrole",
+  "xlinkHref",
+  "xlink:href",
+  "xlinkRole",
+  "xlink:role",
+  "xlinkShow",
+  "xlink:show",
+  "xlinkTitle",
+  "xlink:title",
+  "xlinkType",
+  "xlink:type",
+  "xmlBase",
+  "xml:base",
+  "xmlLang",
+  "xml:lang",
+  "xmlns",
+  "xmlnsXlink",
+  "xmlns:xlink",
+  "xmlSpace",
+  "xml:space",
+  "y1",
+  "y2",
+  "y",
+  "yChannelSelector",
+  "z",
+  "zoomAndPan",
+];
 
 const WebViewHTMLAttributes = [
   ...HTMLAttributes,
@@ -1386,6 +1108,7 @@ module.exports = {
   ProgressHTMLAttributes,
   SlotHTMLAttributes,
   ScriptHTMLAttributes,
+  SVGAttributes,
   SelectHTMLAttributes,
   SourceHTMLAttributes,
   StyleHTMLAttributes,

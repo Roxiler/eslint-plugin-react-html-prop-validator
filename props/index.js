@@ -43,6 +43,7 @@ const props = {
   script: Props.ScriptHTMLAttributes,
   select: Props.SelectHTMLAttributes,
   source: Props.SourceHTMLAttributes,
+  svg: Props.SVGAttributes,
   style: Props.StyleHTMLAttributes,
   table: Props.TableHTMLAttributes,
   textarea: Props.TextareaHTMLAttributes,
