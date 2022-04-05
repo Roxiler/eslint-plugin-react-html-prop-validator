@@ -1,10 +1,11 @@
 {
   "name": "eslint-plugin-react-html-invalid-prop-test",
-  "version": "0.14.90004",
+  "version": "0.14.90007",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint-publish":"eslint index.js && npm publish"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sai6855/eslint-plugin-react-html-invalid-prop/issues"
   },
-  "homepage": "https://github.com/sai6855/eslint-plugin-react-html-invalid-prop#readme"
+  "homepage": "https://github.com/sai6855/eslint-plugin-react-html-invalid-prop#readme",
+  "devDependencies": {
+    "eslint": "^8.12.0"
+  }
 }

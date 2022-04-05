@@ -1043,6 +1043,8 @@ const SVGAttributes = [
   "zoomAndPan",
 ];
 
+<svg  ></svg>
+
 const WebViewHTMLAttributes = [
   ...HTMLAttributes,
   "allowFullScreen",

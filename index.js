@@ -10,14 +10,10 @@ module.exports = {
             if (!elementName) {
               return;
             }
-            const firstChar = elementName[0];
 
             const completedHtmlTags = Object.keys(props);
 
-            if (
-              firstChar !== firstChar.toLowerCase() ||
-              !completedHtmlTags.includes(elementName)
-            ) {
+            if (!completedHtmlTags.includes(elementName)) {
               return;
             }
 
