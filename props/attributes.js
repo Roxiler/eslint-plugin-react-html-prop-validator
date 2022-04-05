@@ -341,6 +341,10 @@ const AnchorHTMLAttributes = [
   "referrerPolicy",
 ];
 
+const AbbrHTMLAttributes = [...HTMLAttributes];
+
+const AddressHTMLAttributes = [...HTMLAttributes];
+
 const AreaHTMLAttributes = [
   ...HTMLAttributes,
   "alt",
@@ -354,7 +358,19 @@ const AreaHTMLAttributes = [
   "target",
 ];
 
+const ArticleHTMLAttributes = [...HTMLAttributes];
+
+const AsideHTMLAttributes = [...HTMLAttributes];
+
+const BHTMLAttributes = [...HTMLAttributes];
+
 const BaseHTMLAttributes = [...HTMLAttributes, "href", "target"];
+
+const BdiHTMLAttributes = [...HTMLAttributes];
+
+const BdoHTMLAttributes = [...HTMLAttributes];
+
+const BigHTMLAttributes = [...HTMLAttributes];
 
 const BlockquoteHTMLAttributes = [...HTMLAttributes, "cite"];
 
@@ -381,17 +397,31 @@ const ButtonHTMLAttributes = [
 
 const CanvasHTMLAttributes = [...HTMLAttributes, "height", "width"];
 
+const CaptionHTMLAttributes = [...HTMLAttributes];
+
+const CiteHTMLAttributes = [...HTMLAttributes];
+
+const CodeHTMLAttributes = [...HTMLAttributes];
+
 const ColHTMLAttributes = [...HTMLAttributes, "span", "width"];
 
 const ColgroupHTMLAttributes = [...HTMLAttributes, "span"];
 
 const DataHTMLAttributes = [...HTMLAttributes, "value"];
 
+const DdHTMLAttributes = [...HTMLAttributes];
+
 const DetailsHTMLAttributes = [...HTMLAttributes, "open"];
 
 const DelHTMLAttributes = [...HTMLAttributes, "cite", "dateTime"];
 
+const DfnHTMLAttributes = [...HTMLAttributes];
+
 const DialogHTMLAttributes = [...HTMLAttributes, "open"];
+
+const DtHTMLAttributes = [...HTMLAttributes];
+
+const EmHTMLAttributes = [...HTMLAttributes];
 
 const EmbedHTMLAttributes = [
   ...HTMLAttributes,
@@ -402,6 +432,13 @@ const EmbedHTMLAttributes = [
 ];
 
 const FieldsetHTMLAttributes = [...HTMLAttributes, "disabled", "form", "name"];
+
+const FigcaptionHTMLAttributes = [...HTMLAttributes];
+
+const FigureHTMLAttributes = [...HTMLAttributes];
+
+const FooterHTMLAttributes = [...HTMLAttributes];
+
 const FormHTMLAttributes = [
   ...HTMLAttributes,
   "acceptCharset",
@@ -418,6 +455,14 @@ const FormHTMLAttributes = [
 ];
 
 const HtmlHTMLAttributes = [...HTMLAttributes, "manifest"];
+
+const HeadHTMLAttributes = [...HTMLAttributes];
+
+const HeaderHTMLAttributes = [...HTMLAttributes];
+
+const HgroupHTMLAttributes = [...HTMLAttributes];
+
+const IHTMLAttributes = [...HTMLAttributes];
 
 const IframeHTMLAttributes = [
   ...HTMLAttributes,
@@ -511,6 +556,8 @@ const InputHTMLAttributes = [
   "onChange",
 ];
 
+const KbdHTMLAttributes = [...HTMLAttributes];
+
 const KeygenHTMLAttributes = [
   ...HTMLAttributes,
   "autoFocus",
@@ -545,9 +592,15 @@ const LinkHTMLAttributes = [
   "charSet",
 ];
 
+const MainHTMLAttributes = [...HTMLAttributes];
+
 const MapHTMLAttributes = [...HTMLAttributes, "name"];
 
+const MarkHTMLAttributes = [...HTMLAttributes];
+
 const MenuHTMLAttributes = [...HTMLAttributes, "type"];
+
+const MenuitemHTMLAttributes = [...HTMLAttributes];
 
 const MediaHTMLAttributes = [
   ...HTMLAttributes,
@@ -589,6 +642,10 @@ const MeterHTMLAttributes = [
   "value",
 ];
 
+const NavHTMLAttributes = [...HTMLAttributes];
+
+const NoscriptHTMLAttributes = [...HTMLAttributes];
+
 const QuoteHTMLAttributes = [...HTMLAttributes, "cite"];
 
 const ObjectHTMLAttributes = [
@@ -626,7 +683,19 @@ const OutputHTMLAttributes = [
 
 const ParamHTMLAttributes = [...HTMLAttributes, "name", "value"];
 
+const PictureHTMLAttributes = [...HTMLAttributes];
+
 const ProgressHTMLAttributes = [...HTMLAttributes, "max", "value"];
+
+const RpHTMLAttributes = [...HTMLAttributes];
+
+const RtHTMLAttributes = [...HTMLAttributes];
+
+const RubyHTMLAttributes = [...HTMLAttributes];
+
+const SHTMLAttributes = [...HTMLAttributes];
+
+const SampHTMLAttributes = [...HTMLAttributes];
 
 const SlotHTMLAttributes = [...HTMLAttributes, "name"];
 
@@ -642,6 +711,8 @@ const ScriptHTMLAttributes = [
   "src",
   "type",
 ];
+
+const SectionHTMLAttributes = [...HTMLAttributes];
 
 const SelectHTMLAttributes = [
   ...HTMLAttributes,
@@ -659,6 +730,8 @@ const SelectHTMLAttributes = [
   "onChange",
 ];
 
+const SmallHTMLAttributes = [...HTMLAttributes];
+
 const SourceHTMLAttributes = [
   ...HTMLAttributes,
   "height",
@@ -671,6 +744,8 @@ const SourceHTMLAttributes = [
   "width",
 ];
 
+const StrongHTMLAttributes = [...HTMLAttributes];
+
 const StyleHTMLAttributes = [
   ...HTMLAttributes,
   "media",
@@ -678,6 +753,12 @@ const StyleHTMLAttributes = [
   "scoped",
   "type",
 ];
+
+const SubHTMLAttributes = [...HTMLAttributes];
+
+const SummaryHTMLAttributes = [...HTMLAttributes];
+
+const SupHTMLAttributes = [...HTMLAttributes];
 
 const TableHTMLAttributes = [
   ...HTMLAttributes,
@@ -749,6 +830,10 @@ const TrackHTMLAttributes = [
   "srcLang",
 ];
 
+const UHTMLAttributes = [...HTMLAttributes];
+
+const VarHTMLAttributes = [...HTMLAttributes];
+
 const VideoHTMLAttributes = [
   ...HTMLAttributes,
   "height",
@@ -757,6 +842,8 @@ const VideoHTMLAttributes = [
   "width",
   "disablePictureInPicture",
 ];
+
+const WbrHTMLAttributes = [...HTMLAttributes];
 
 const SVGAttributes = [
   ...DOMAttributes,
@@ -1069,35 +1156,63 @@ const WebViewHTMLAttributes = [
 module.exports = {
   HTMLAttributes,
   AnchorHTMLAttributes,
+  AbbrHTMLAttributes,
+  AddressHTMLAttributes,
   AreaHTMLAttributes,
+  ArticleHTMLAttributes,
+  AsideHTMLAttributes,
+  BHTMLAttributes,
   BaseHTMLAttributes,
+  BdiHTMLAttributes,
+  BdoHTMLAttributes,
+  BigHTMLAttributes,
   BlockquoteHTMLAttributes,
   ButtonHTMLAttributes,
   CanvasHTMLAttributes,
+  CaptionHTMLAttributes,
+  CiteHTMLAttributes,
+  CodeHTMLAttributes,
   ColHTMLAttributes,
   ColgroupHTMLAttributes,
   DataHTMLAttributes,
+  DdHTMLAttributes,
   DetailsHTMLAttributes,
   DelHTMLAttributes,
+  DfnHTMLAttributes,
   DialogHTMLAttributes,
+  DtHTMLAttributes,
+  EmHTMLAttributes,
   EmbedHTMLAttributes,
   FieldsetHTMLAttributes,
+  FigcaptionHTMLAttributes,
+  FigureHTMLAttributes,
+  FooterHTMLAttributes,
   FormHTMLAttributes,
   HtmlHTMLAttributes,
+  HeadHTMLAttributes,
+  HeaderHTMLAttributes,
+  HgroupHTMLAttributes,
+  IHTMLAttributes,
   IframeHTMLAttributes,
   ImgHTMLAttributes,
   InsHTMLAttributes,
   InputHTMLAttributes,
+  KbdHTMLAttributes,
   KeygenHTMLAttributes,
   LabelHTMLAttributes,
   LiHTMLAttributes,
   LinkHTMLAttributes,
+  MainHTMLAttributes,
   MapHTMLAttributes,
+  MarkHTMLAttributes,
   MenuHTMLAttributes,
+  MenuitemHTMLAttributes,
   MediaHTMLAttributes,
   AudioHTMLAttributes,
   MetaHTMLAttributes,
   MeterHTMLAttributes,
+  NavHTMLAttributes,
+  NoscriptHTMLAttributes,
   QuoteHTMLAttributes,
   ObjectHTMLAttributes,
   OlHTMLAttributes,
@@ -1105,19 +1220,34 @@ module.exports = {
   OptionHTMLAttributes,
   OutputHTMLAttributes,
   ParamHTMLAttributes,
+  PictureHTMLAttributes,
   ProgressHTMLAttributes,
+  RpHTMLAttributes,
+  RtHTMLAttributes,
+  RubyHTMLAttributes,
+  SHTMLAttributes,
+  SampHTMLAttributes,
   SlotHTMLAttributes,
   ScriptHTMLAttributes,
+  SectionHTMLAttributes,
   SVGAttributes,
   SelectHTMLAttributes,
+  SmallHTMLAttributes,
   SourceHTMLAttributes,
+  StrongHTMLAttributes,
   StyleHTMLAttributes,
+  SubHTMLAttributes,
+  SummaryHTMLAttributes,
+  SupHTMLAttributes,
   TableHTMLAttributes,
   TextareaHTMLAttributes,
   TdHTMLAttributes,
   ThHTMLAttributes,
   TimeHTMLAttributes,
   TrackHTMLAttributes,
+  UHTMLAttributes,
+  VarHTMLAttributes,
   VideoHTMLAttributes,
+  WbrHTMLAttributes,
   WebViewHTMLAttributes,
 };
