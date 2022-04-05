@@ -95,6 +95,7 @@ const props = {
   var: Props.VarHTMLAttributes,
   video: Props.VideoHTMLAttributes,
   wbr: Props.WbrHTMLAttributes,
+  webview: Props.WebViewHTMLAttributes
 };
 
 module.exports = {
