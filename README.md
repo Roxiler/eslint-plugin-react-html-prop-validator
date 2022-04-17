@@ -13,7 +13,7 @@ $ npm i eslint --save-dev
 Next, install `npm i eslint-plugin-react-html-prop-validator`:
 
 ```
-$ npm install eeslint-plugin-react-html-prop-validator --save-dev
+$ npm install eslint-plugin-react-html-prop-validator --save-dev
 ```
 
 **Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `npm i eslint-plugin-react-html-prop-validator` globally.
