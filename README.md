@@ -74,7 +74,7 @@ class Component extends React.Component {
 }
 class Component extends React.Component {
   render() {
-    <h12 classNames="">Hello world!!</h12>;
+    <h12 className="">Hello world!!</h12>;
   }
 }
 class Component extends React.Component {
